@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Winning Button</title>
+    <link rel="stylesheet" href="./GuessTheButton.css">
+</head>
+
+<body>
+    <main>
+        <h1>Guesss the winning button !</h1>
+    </main>
+    <h3>Please enter below the number of buttons you want to play with.</h3>
+    <h4>( Between 1 and 10 )</h4>
+    <div class="line1">
+        <input type="number" id="nrButtons" class="input" min=1 max=10>
+    </div>
+    <div>
+        <button onclick="addButtons(nrButtons.value)" class="startBtn">Start !</button>
+        <button class="refresh" onClick="window.location.reload();">Restart !</button>
+    </div>
+    <div>
+        <script src="./GuessTheButton.js"></script>
+    </div>
+</body>
+
+</html>
