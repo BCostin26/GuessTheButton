@@ -1,9 +1,9 @@
 let buttons = document.getElementById("nrButtons").value;
 
-function addButtons(buttons) {
-    let winnerNumber = (Math.floor(Math.random() * buttons)) + 1;
-    if (buttons >= 0 && buttons <= 10) {
-        for (let i = 1; i <= buttons; ++i) {
+function addButtons(noButtons) {
+    let winnerNumber = (Math.floor(Math.random() * noButtons)) + 1;
+    if (noButtons >= 0 && noButtons <= 10) {
+        for (let i = 1; i <= noButtons; ++i) {
             let btn = document.createElement("button");
             btn.innerHTML = "Click me !";
             btn.id = i;
